@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    height: auto;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
+}
+.upper-nav{
+    display: flex;
+    background-color: #29292B;
+}
+.upper-nav-links{
+    background-color: #29292B;
+    font-family: kanit;
+    color: rgb(215, 215, 215);
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.upper-nav-login{
+    height: auto;
+    width: 70px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 20px;
+    border: none;
+    background-color: #3D5BF0;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+}
+.lower-navbar{
+    height: 70px;
+    background-color: #1D1D1F;
+}
+.left-side, .right-side{
+    display: inline-flex;
+    background-color: transparent;
+    padding:  15px 100px 15px 100px;
+}
+.right-side{
+    float: right;
+}
+#nav-icons{
+   color: #667ffd; 
+   padding: 20px;
+   background-color: transparent;
+}
+.company-name{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: kanit;
+    color: white;  
+    background:transparent;
+}
+span{
+    color: #667ffd;
+    background:transparent;
+}
+.nav-links{
+    font-size: 24px;
+    font-family: kanit;
+    font-weight: 400;
+    background:transparent;
+    color: rgb(193, 193, 193);
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.banner-main{
+    width: 100%;
+    position: absolute;
+}
+
+.banner-video{
+    position: relative;
+    width: 100%;
+    filter: grayscale();
+    z-index: 0;
+}
+.banner-content{
+    position: absolute;
+    right: 300px;
+    bottom: 350px;
+    background: transparent;
+}
+.banner-heading{
+    text-align: center;
+    font-size: 125px;
+    color: #667ffd;
+    -webkit-text-stroke: 2px #2D2D30;
+    font-weight: 700;
+    font-family: kanit;
+    background: transparent;
+    transition: 0.5s;
+}
+.banner-heading:hover{
+    -webkit-text-stroke: 5px whitesmoke;
+    color: transparent;
+}
+/*motto-main-page-content*/
+.container{
+    position: relative;
+    padding: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 860px;/*jugaad*/
+}
+.motto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.motto-content{
+    text-align: center;
+}
+.motto-heading{
+    font-size: 50px;
+    font-family: kanit;
+    font-weight: 700;
+    color: #2D2D30;
+}
+.motto-desc{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: kanit;
+    color: #6B6B84;
+}
+.motto-button{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #3D5BF0;
+    border: #3D5BF0;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.review{
+    margin-bottom: 50px;
+
+}
+.review-teachers{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;   
+}
+.review-desc{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: kanit;
+    background: linear-gradient(93.44deg, #3D5BF0 -6.8%, #3CA5C2 186.94%);
+    padding: 20px;
+    border-radius: 6px;
+    padding-left: 350px;
+    color: white;
+}
+
+.review-button{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-family: kanit;
+    background-color: #262629;
+    margin-left: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+.accordion{
+    width: 1200px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    padding-left: 340px;
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: kanit;
+    color: #2D2D30;
+}
+.accordion .contentBx .label::before
+{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+
+.accordion .contentBx .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: kanit;
+    color: #6B6B84;
+}
+.accordion .contentBx.active .content{
+    height: 80px;
+    padding: 10px;
+}
+
+/*Footer-section*/
+.footer{
+    padding-top: 20px;
+    background-color: #262629;
+}
+.footer-top{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px;
+    height: 80%;
+    background: transparent;
+}
+.footer-company-name{
+    display: inline;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: kanit;  
+    background: transparent;
+}
+.col-a{
+    background: transparent;
+    width: 25%;
+}
+.col-b{
+    width: 25%;
+    background-color: #262629;
+}
+.connect{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px;
+    font-family: kanit;
+    color: rgb(193, 193, 193);
+    margin-top: 20px;
+    background-color: transparent;
+}
+.footer-icons{
+    padding: 10px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    border: 3px solid rgb(193, 193, 193);
+    border-radius: 20%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.col-b-heading{
+    font-size: 25px;
+    text-align: center;
+    font-family: kanit;
+    color: rgb(220, 220, 220);
+    background: transparent;
+}
+ul{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    font-family: kanit;
+    text-align: center;
+    background-color: #262629;
+}
+ul li{ 
+    background: transparent;
+    list-style-type: none ;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(193, 193, 193);
+}
+hr{
+    color:rgb(27, 27, 27);
+    margin-right: 25px;
+    width: 1px;
+}
+.number{
+    background: transparent;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px;
+    font-family: kanit;
+    color: rgb(193, 193, 193);   
+}
+.col-c{
+    background: transparent;
+}
+.copyright{
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: kanit;
+    color: rgb(220, 220, 220);
+    text-align: center;
+    background-color: #1D1D1F;
+}

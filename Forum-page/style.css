@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    padding:  15px 100px 15px 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.03);
+}
+.left-side, .right-side{
+    display: flex;
+    flex-direction: row;
+    background:transparent;
+    gap: 10px;
+    align-items: center;
+}
+#nav-icons{
+   color: #3D5BF0; 
+}
+.company-name{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: kanit;
+    color: black;  
+    margin-right: 50px; 
+    background:transparent;
+}
+span{
+    color: #3D5BF0;
+    background:transparent;
+}
+.search{
+    margin-left: 250px;
+    width: 400px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+#magnifier{
+    margin-right: 5px;
+}
+.search-box{
+    border: none;
+    width: 350px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+}
+*:focus{
+    outline: none
+}
+.small{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 4px;
+}
+.profile-name{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: kanit;
+    color: rgb(62, 62, 62);
+    background:transparent;
+}
+.nav-links{
+    font-size: 16px;
+    font-family: kanit;
+    font-weight: 400;
+    background:transparent;
+    color: rgb(62, 62, 62);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.container{
+    display: flex;
+    padding: 25px;
+    margin-top: 40px;
+    font-family: kanit;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.col-1{
+    width: 16%;
+}
+.col-2{
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 50px;
+    background-color: white;
+    padding: 10px;
+    color: rgb(43, 43, 43);
+}
+.col-3{
+    width: 20%;
+    padding: 10px;
+    margin-left: 20px;
+}
+.md-col-4{
+    display: flex;
+    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+	text-align: justify;
+    border-radius: 12px;
+}
+.menu-section{
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+    display: inline-flex;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#menu-icon{
+    color: rgb(62, 62, 62);
+}
+.merch{
+    height: 270px;
+    width: 270px;
+    margin-top: 100px;
+    float: right;
+    border-radius: 50%;
+}
+#store{
+    box-sizing: border-box;
+    display: inline-flex;
+    border: 1px solid #10938D;
+    height: 35px;
+    width: 200px;
+    padding: 8px;
+    padding-left: 27px;
+    background-color: #10938D;
+    border-radius: 6px;
+    color: white;
+    
+}
+.store-button{
+    border: none;
+    font-size: 18px;
+    margin-left: 12px ;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+.likes{
+    border: none;
+    width: 40px;
+}
+.md-col-2-a{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.md-col-2-b{
+    width: 85%;
+}
+.post-img{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.post-desc{
+    font-weight: normal;
+    color: rgb(49, 49, 49);
+}
+hr{
+    margin-top: 10px;
+}
+#new-topic{
+    box-sizing: border-box;
+    color: white;
+    width: 250px;
+    background-color: #3D5BF0;
+    padding: 10px;
+    padding-left: 45px;
+    border: none;
+    border-radius: 6px;
+}
+.new-topic-text{
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+.top-users-container{
+    margin-top: 40px;
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.03);
+}
+.top-users{
+    font-size: 18px;
+    padding: 20px;
+}
+.user-rank{
+    display: inline;
+    font-size: 14px;
+    float: right;
+}
+.fa-xs{
+    color: #3D5BF0;
+}
+.side-bar-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px;
+}
+.footer-elements-a{
+    font-size: 14px;
+    padding: 15px;
+    color: rgb(96, 96, 96);
+    cursor: pointer;
+}
