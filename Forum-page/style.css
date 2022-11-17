@@ -72,6 +72,20 @@ span{
     color: rgb(62, 62, 62);
     background:transparent;
 }
+.sub-menu{
+    display: none;
+} 
+.right-side ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+} 
+.right-side ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
 .nav-links{
     font-size: 16px;
     font-family: kanit;
@@ -81,7 +95,16 @@ span{
     padding: 10px;
     margin-top: 5px;
 }
-
+.upvote,.downvote,.likes{
+    font-size: 18px;
+    font-weight: 600;
+}
+.upvote:hover{
+    color: lightgreen;
+}
+.downvote:hover{
+    color: red;
+}
 .container{
     display: flex;
     padding: 25px;
@@ -111,9 +134,11 @@ span{
     box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.03);
     padding: 20px;
     margin-bottom: 20px;
-    cursor: pointer;
 	text-align: justify;
     border-radius: 12px;
+}
+#upvote,#downvote{
+    cursor: pointer;
 }
 .menu-section{
     font-size: 18px;
