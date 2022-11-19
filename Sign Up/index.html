@@ -24,12 +24,21 @@
         <p class="signin">Sign Up</p>
         <form>
             <label>Email</label><br>
-            <input type="email" name="email" placeholder="">
-            <a href="../Set Password/index.html"><button class="password" >Set Password</button></a>
+            <input type="email" name="email" placeholder="" >
+            <a href="../Set Password/index.html"><button onsubmit="return validateForm()" class="password" >Set Password</button></a>
             <h2>OR</h2>
             <button class="sign-google"><img src="./assets/google-logo-png-29546.png" class="img-google">Sign Up with Google</button>
             <p>Already have an account? <a href="../Set Password/index.html"> Login</a></p>
         </form>
     </div>
+    <script>
+        function validateForm() {
+          let x = document.forms["email"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
 </body>
 </html> 
